@@ -1,0 +1,80 @@
+<div class="container mt-4">
+
+  <div
+    class="d-flex justify-content-between mb-3">
+
+    <h3>Employees</h3>
+
+    <button
+      class="btn btn-success"
+      routerLink="/add-employee">
+
+      Add Employee
+
+    </button>
+
+  </div>
+
+  <table
+    class="table table-bordered table-striped">
+
+    <thead>
+
+      <tr>
+
+        <th>ID</th>
+
+        <th>employeeCode</th>
+
+        <th>name</th>
+
+        <th>email</th>
+
+        <th>department</th>
+
+        <th>salary</th>
+
+        <th>joiningDate</th>
+
+        <th>status</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+  <tr *ngFor="let employee of employees">
+
+    <td>{{ employee.id }}</td>
+    <td>{{ employee.employeeCode }}</td>
+    <td>{{ employee.name }}</td>
+    <td>{{ employee.email }}</td>
+    <td>{{ employee.department }}</td>
+    <td>{{ employee.salary }}</td>
+    <td>{{ employee.joiningDate }}</td>
+    <td>{{ employee.status }}</td>
+
+    <td>
+       <button
+      class="btn btn-success"
+      routerLink="/edit-employee">
+
+      Edit
+
+    </button>
+    </td>
+      <td>  <button
+      class="btn btn-success"
+      routerLink="/edit-employee">
+
+      delete
+
+    </button></td>
+  </tr>
+
+</tbody>
+
+  </table>
+
+</div>

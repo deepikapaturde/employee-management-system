@@ -1,0 +1,84 @@
+<div class="container mt-5">
+
+  <!-- HEADER -->
+
+  <div
+    class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+
+      <h2>
+
+        Employee Management Dashboard
+
+      </h2>
+
+      <p class="text-muted">
+
+        Welcome to admin panel
+
+      </p>
+
+    </div>
+
+    <button
+      class="btn btn-danger"
+      (click)="logout()">
+
+      Logout
+
+    </button>
+
+  </div>
+
+  <div class="d-flex flex-wrap gap-3">
+
+      <a
+        routerLink="/employees"
+        class="btn btn-primary">
+
+        Employee List
+
+      </a>
+
+      <a
+        routerLink="/add-employee"
+        class="btn btn-success">
+
+        Add Employee
+
+      </a>
+
+    </div>
+    <a
+  routerLink="/analytics"
+  class="btn btn-info me-2">
+
+  Analytics
+
+</a>
+
+<a
+  routerLink="/upload"
+  class="btn btn-warning">
+
+  Upload File
+
+</a>
+<a
+        routerLink="/register"
+        class="btn btn-primary">
+
+         Register User for first time
+
+      </a>
+<a
+        routerLink="/register"
+        class="btn btn-primary">
+
+         Register users
+
+      </a>
+
+  </div>
+
